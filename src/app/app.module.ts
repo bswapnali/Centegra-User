@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule ,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +26,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatGridList } from '@angular/material/grid-list';
+import { Header2Component } from './header2/header2.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     ConditionsComponent,
     PrivacyPolicyComponent,
     SignupComponent,
+    Header2Component,
+    
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,11 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatGridListModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule
+    LayoutModule,
+   
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

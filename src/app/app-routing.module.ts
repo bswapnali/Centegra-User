@@ -12,10 +12,10 @@ import { CareerComponent } from './career/career.component';
 import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignupComponent } from './signup/signup.component';
-import { Header2Component } from './Dash/header2/header2.component';
+
 
 const routes: Routes = [
-   {path:'header2',component:Header2Component},
+  //  {path:'header2',component:Header2Component},
   {path:'',component:HomeComponent},
   // {path:'footer',component:FooterComponent},
   {path:'about',component:AboutComponent},
