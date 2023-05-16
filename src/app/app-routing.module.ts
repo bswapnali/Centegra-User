@@ -12,6 +12,7 @@ import { CareerComponent } from './career/career.component';
 import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignupComponent } from './signup/signup.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'career',component:CareerComponent},
   {path:'terms/conditions',component:ConditionsComponent},
   {path:'privacy-policy',component:PrivacyPolicyComponent},
-  {path:'signup',component:SignupComponent}
+  {path:'signup',component:SignupComponent},
+  {path:'navbar',component:NavbarComponent}
 
 ];
 

@@ -27,7 +27,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatGridList } from '@angular/material/grid-list';
-import { Header2Component } from './header2/header2.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -44,8 +47,7 @@ import { Header2Component } from './header2/header2.component';
     ConditionsComponent,
     PrivacyPolicyComponent,
     SignupComponent,
-    Header2Component,
-    
+    NavbarComponent,  
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,9 @@ import { Header2Component } from './header2/header2.component';
     MatMenuModule,
     MatIconModule,
     LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
    
   ],
   schemas: [
