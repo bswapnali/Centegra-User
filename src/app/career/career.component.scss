@@ -1,0 +1,209 @@
+.container-career{
+    width: 100%;
+    background-image: url(../../assets/Images/image75.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    background-size: 100%;
+  }
+  
+  .career-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .career-heading {
+    width: 100%;
+    align-items: center;
+    color: #E5E5E5;
+    padding: 15px;
+  }
+  
+  .career-heading h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .career-heading p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  form {
+    width: 525px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    margin-left: 380px;
+    margin-right: 50%;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    font-size: 14px;
+   
+  }
+  form input {
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(51, 51, 51, 0.8);
+    /* margin-left: 20px; */
+    margin-right: 20px;
+    border-right: 1px solid #E8E6E6;
+    /* transform: rotate(90deg); */
+    height: 40px;
+    ;
+  }
+  
+  ::placeholder {
+    border: none;
+  }
+  
+  form :nth-child(2) {
+    width: 20%;
+  }
+  
+  form select {
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(51, 51, 51, 0.8);
+  }
+  
+  #fname {
+    width: 50%;
+    position: relative;
+    border-right: 1px solid #E8E6E6;
+    outline: none;
+    height: 40px;
+   border-radius: 20px 0px 0px 20px;
+  }
+  .search-box {
+    width: 150px;
+    height: 50px;
+    background: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    margin-left: 140px;
+    color: white;
+  }
+
+  .search-box svg {
+    margin-top: 60px;
+    color: white;
+    border: 2px solid #FFFFFF;
+  }
+
+  .fa-search {
+    font-size: 30px !important;
+    margin-top: 10px !important;
+    /* border: 2px solid #FFFFFF; */
+    /* padding-top: 10px !important; */
+  }
+  .home{
+    position: relative;
+    left: -10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 10px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+   }
+  .career-mute{
+    width: 126x;
+    height: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 10px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+   }
+    
+   .container-second-pages {
+    /* width: 100%; */
+    height: 200vh;
+    padding: 0px 40px;
+  }
+  .position h3{
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600px;
+    text-align: Left;
+    vertical-align: Top;
+  }
+   
+  .position p {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    // color: #FFFFFF;
+  }
+  .btn-dark {
+    height: 44px;
+    width: 146px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 3px 20px;
+}
+  .btn-light{
+    height: 44px;
+    width: 120px;
+    display:inline-flex;
+    justify-content:space-around;
+    border-radius: 6px solid black;
+    border: 1px solid #000000;
+ }
+ .btn-group1{
+    margin-top: 30px;
+    display:inline-flex;
+    justify-content:space-around;
+ }
+ .fa-upload{
+    align-items:inherit;
+ }
+
+ .position-2{
+  margin-top: 25px;
+ }
+
+ .btn-group2{
+  margin-top: 30px;
+  display:inline-flex;
+ 
+ 
+}
+ .btn a {
+  text-decoration: none;
+  // padding: 10px 10px;
+ }
+ .rounded-pill{
+  width:146px;
+  margin-left: 20px;
+  border-radius: 25px;
+  border: 1px solid #000000;
+ }
