@@ -14,6 +14,18 @@ import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
 import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './signup/signup.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -28,11 +40,23 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     AboutComponent,
     CareerComponent,
     ConditionsComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

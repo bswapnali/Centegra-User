@@ -11,10 +11,12 @@ import { PlatformComponent } from './platform/platform.component';
 import { CareerComponent } from './career/career.component';
 import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { SignupComponent } from './signup/signup.component';
+import { Header2Component } from './Dash/header2/header2.component';
 
 const routes: Routes = [
-  // {path:'header',component:HeaderComponent},
-  {path:'home',component:HomeComponent},
+   {path:'header2',component:Header2Component},
+  {path:'',component:HomeComponent},
   // {path:'footer',component:FooterComponent},
   {path:'about',component:AboutComponent},
   {path:'leasing',component:LeasingComponent},
@@ -23,7 +25,8 @@ const routes: Routes = [
   {path:'platform',component:PlatformComponent},
   {path:'career',component:CareerComponent},
   {path:'terms/conditions',component:ConditionsComponent},
-  {path:'privacy-policy',component:PrivacyPolicyComponent}
+  {path:'privacy-policy',component:PrivacyPolicyComponent},
+  {path:'signup',component:SignupComponent}
 
 ];
 
