@@ -17,5 +17,9 @@
 }
 
 .spacer{
-  flex: 5 5 auto;
+  flex:1 1 auto;
+  align-items: right;
+}
+.spacer a {
+  margin: 8px;
 }
