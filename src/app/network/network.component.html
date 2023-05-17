@@ -1,1 +1,34 @@
-<p>network works!</p>
+<div class="container">
+    <div class="bg-image">
+        <div class="network-heading">
+            <h1>Network</h1>
+            <p>
+                We have a diverse range of units listed from ambient warehouses, refrigerated and frozen units. Office and mezzanine<br>
+                units are available at various locations in 10 major cities across 8 states
+            </p>
+        </div>
+        <div class="network-heading-buttons">
+            <div class="rating-button">
+                <mat-form-field class="RatingBtn" appearance="fill">
+                    <mat-label>Rating</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let option of Ratings" [value]="option.value">
+                        {{option.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="input-buttons">
+                <input class="Search rounded-pill mr-1 pr-5" type="search" id="InputBar" placeholder="Search City, State for Warehouse">
+                <button class="SearchBtn" type="button">
+                    <i class="bi bi-search" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1mcRUUuERWn7n6aTN3_-QXXFsJTDaxI8&ehbc=2E312F"
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
