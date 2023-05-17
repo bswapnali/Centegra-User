@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
@@ -9,18 +9,29 @@
       <a mat-list-item href="#">Link 2</a>
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
-  </mat-sidenav>
+  </mat-sidenav> -->
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
+    <mat-toolbar color="light">
+      <!-- <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>Centegra-User</span>
+      </button> -->
+      <span>Logo</span>
+      <div class="spacer"></div>
+      <a mat-button>Dashboard</a>
+      <a mat-button>Bookings</a>
+      <a mat-button>Contracts</a>
+      <a mat-button>Invoices</a>
+      <a mat-button>Payments</a>
+      <a mat-button>Dashboard</a>
+      <a mat-button><mat-icon>search</mat-icon></a>
+      <a mat-button>Settings<mat-icon>settings</mat-icon></a>
+      <a mat-button>Mahendra Gaur<mat-icon> person_pin</mat-icon></a>
+
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>
