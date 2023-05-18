@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LeasingComponent } from './leasing/leasing.component';
 import { ListingComponent } from './listing/listing.component';
 import { NetworkComponent } from './network/network.component';
+import { SelectLocationComponent } from './network/select-location/select-location.component';
 import { PlatformComponent } from './platform/platform.component';
 import { AboutComponent } from './about/about.component';
 import { CareerComponent } from './career/career.component';
@@ -31,6 +32,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule} from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { MatListModule } from '@angular/material/list';
     ConditionsComponent,
     PrivacyPolicyComponent,
     SignupComponent,
-    NavbarComponent,  
+    NavbarComponent,
+    SelectLocationComponent,  
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,7 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-   
+    MatDialogModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

@@ -13,6 +13,7 @@ import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SelectLocationComponent } from './network/select-location/select-location.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:'terms/conditions',component:ConditionsComponent},
   {path:'privacy-policy',component:PrivacyPolicyComponent},
   {path:'signup',component:SignupComponent},
-  {path:'navbar',component:NavbarComponent}
+  {path:'navbar',component:NavbarComponent},
+  {path:'select-location',component:SelectLocationComponent}
 
 ];
 

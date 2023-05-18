@@ -8,15 +8,25 @@
             </p>
         </div>
         <div class="network-heading-buttons">
-            <div class="rating-button">
+            <!-- <div class="rating-button">
                 <mat-form-field class="RatingBtn" appearance="fill">
-                    <mat-label>Rating</mat-label>
+                    <mat-label class="Ratinglabel">Rating</mat-label>
                     <mat-select>
                       <mat-option *ngFor="let option of Ratings" [value]="option.value">
                         {{option.viewValue}}
                       </mat-option>
                     </mat-select>
-                  </mat-form-field>
+                </mat-form-field>
+            </div> -->
+            <div class="RatingBtn">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Star</option>
+                    <option value="3">3 Star</option>
+                    <option value="4">4 Star</option>
+                    <option value="5">5 Star</option>
+                  </select>
             </div>
             <div class="input-buttons">
                 <input class="Search rounded-pill mr-1 pr-5" type="search" id="InputBar" placeholder="Search City, State for Warehouse">
@@ -24,11 +34,60 @@
                     <i class="bi bi-search" style="color: #ffffff;"></i>
                 </button>
             </div>
+            <div class="LocationBtn">
+                <button mat-button (click)="SelectLocation()">
+                    <!-- [matMenuTriggerFor]="menu" #menuTrigger -->
+                    <i class="bi bi-geo-alt-fill"></i> Select Location</button>
+                    <!-- <mat-menu #menu="matMenu" class="SelectLocationMenu">
+                        <div class="location-heading">
+                            <h5>Search your loaction</h5>
+                            <p>type your state,city</p>
+                            <input type="text" matInput placeholder="Enter your state, city name">
+                        </div>
+                        <div class="location-dropdown">
+                            <h6>Popular Cities</h6>
+                            <div class="Maharashtra-cities">
+                                <select aria-label="Default select example">
+                                    <option selected>Maharashtra</option>
+                                    <option value="1">Mumbai</option>
+                                    <option value="2">Pune</option>
+                                    <option value="3">Nashik</option>
+                                  </select>
+                            </div>
+                            <div class="Karnataka-cities">
+                                <select aria-label="Default select example">
+                                    <option selected>Karnataka</option>
+                                    <option value="1">Bengaluru</option>
+                                    <option value="2">Udupi</option>
+                                    <option value="3">Mangaluru</option>
+                                  </select>
+                            </div>
+                            <div class="Maharashtra-cities">
+                                <select aria-label="Default select example">
+                                    <option selected>Hyderabad</option>
+                                    <option value="1">Jubilee Hills</option>
+                                    <option value="2">Mallapur</option>
+                                    <option value="3">Ramoji</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </mat-menu> -->
+            </div>
+        </div>        
+    </div>
+    <div class="float-container">
+
+        <div class="float-child1">
+          <div class="green">Float Column 1</div>
         </div>
         
-    </div>
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1mcRUUuERWn7n6aTN3_-QXXFsJTDaxI8&ehbc=2E312F"
-         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <div class="float-child2">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1mcRUUuERWn7n6aTN3_-QXXFsJTDaxI8&ehbc=2E312F"
+                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+      </div>
+    
 </div>
