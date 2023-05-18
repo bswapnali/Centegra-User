@@ -14,6 +14,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectLocationComponent } from './network/select-location/select-location.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -29,8 +30,11 @@ const routes: Routes = [
   {path:'terms/conditions',component:ConditionsComponent},
   {path:'privacy-policy',component:PrivacyPolicyComponent},
   {path:'signup',component:SignupComponent},
+  {path:'login',component:LoginComponent},
   {path:'navbar',component:NavbarComponent},
-  {path:'select-location',component:SelectLocationComponent}
+  {path:'select-location',component:SelectLocationComponent},
+
+
 
 ];
 

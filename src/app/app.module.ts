@@ -32,8 +32,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatDialogModule} from '@angular/material/dialog'
-
+import { MatDialogModule} from '@angular/material/dialog';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +50,8 @@ import { MatDialogModule} from '@angular/material/dialog'
     PrivacyPolicyComponent,
     SignupComponent,
     NavbarComponent,
-    SelectLocationComponent,  
+    SelectLocationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
