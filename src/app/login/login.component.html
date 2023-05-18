@@ -1,0 +1,42 @@
+<!-- <div class="login-container">
+    <div class="login-content">
+        <mat-card class="log-card">
+            <mat-card-header>
+                <button mat-raised-button class="button1">Sign Up</button>
+                <button mat-raised-button class="button1" (click)="login()" [routerLink]="['/login']">Login</button>
+            </mat-card-header>
+            <div class="filds">
+                <mat-card-content class="content">
+                    <form [formGroup]="loginForm" novalidate (ngSubmit)="Submit()">
+                        <h3>Email address*</h3>
+                        <p>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Email Address</mat-label>
+                                <input matInput placeholder="mail@example.com" [formControl]="email" type="email"
+                                    required>
+                                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                        </p>
+                        <h3>Password*</h3>
+                        <p>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder="Enter your password" [formControl]="password"
+                                    name="password" type="password" required>
+                            </mat-form-field>
+                        </p>
+                        <input id="checkbox" type="checkbox" />
+                        <label for="checkbox">
+                            Remember me <a href="#">Forgot password?</a>.</label>
+                        <mat-card-actions>
+                            <div class="row">
+                                <button mat-raised-button color="primary" (click)="Submit()">Submit</button>
+                                <span *ngIf="show"> <button mat-button color="accent">Login success !!</button></span>
+                            </div>
+                        </mat-card-actions>
+                    </form>
+                </mat-card-content>
+            </div>
+        </mat-card>
+    </div>
+</div> -->

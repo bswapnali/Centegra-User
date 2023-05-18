@@ -1,38 +1,42 @@
-<mat-sidenav-container class="sidenav-container">
-  <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
-  </mat-sidenav> -->
-  <mat-sidenav-content>
-    <mat-toolbar color="light">
-      <!-- <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button> -->
-      <span>Logo</span>
-      <div class="spacer">
-      <a mat-button>Dashboard</a>
-      <a mat-button>Bookings</a>
-      <a mat-button>Contracts</a>
-      <a mat-button>Invoices</a>
-      <a mat-button>Payments</a>
-      <a mat-button>Dashboard</a>
-      <a mat-button><mat-icon>search</mat-icon></a>
-      <a mat-button>Settings<mat-icon>settings</mat-icon></a>
-      <a mat-button>Mahendra Gaur<mat-icon> person_pin</mat-icon></a>
-    </div>
-    </mat-toolbar>
-    <!-- Add Content Here -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<!-- 
+<header>
+  <div class="header-left">
+    <h2>Logo</h2>
+  </div>
+  <div class="header-right">
+    <nav>
+      <a routerLink="/">Dashboard</a>
+      <a routerLink="listing">Bookings</a>
+      <a routerLink="network">Contracts</a>
+      <a routerLink="platform">Invoices</a>
+      <a routerLink="about">Payments</a>
+      <a routerLink=""><i class="bi bi-search"></i></a>
+      <button mat-raised-button>Settings<mat-icon>settings</mat-icon></button>
+      <button mat-raised-button>Mahendra Gaur<mat-icon>account_circle</mat-icon></button>
+    </nav>
+  </div>
+</header>-->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+</html> -->
+<body>
+  <nav>
+    <label class="logo">Logo</label>
+    <ul>
+    <li><a href="#"></a>Dashboard</li>
+    <li><a href="#"></a>Bookings</li>
+    <li><a href="#"></a>Contracts</li>
+    <li><a href="#"></a>Invoices</li>
+    <li><a href="#"></a>Payments</li>
+    <li><a href="#"></a><i class="bi bi-search"></i></li>
+    <button mat-raised-button>Settings<mat-icon>settings</mat-icon></button>
+    <button mat-raised-button>Mahendra Gaur<mat-icon>account_circle</mat-icon></button>
+    
+    
+    </ul>
+  </nav>
+</body>

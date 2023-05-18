@@ -1,100 +1,146 @@
-<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
-  <mat-card class="shipping-card">
+
+<form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="log-card">
     <mat-card-header>
-      <mat-card-title>Shipping Information</mat-card-title>
+      <!-- <button class="button1" mat-raised-button-toggle>Sign Up</button>
+      <button class="button1" mat-raised-button-toogle>Login</button> -->
+      <!-- <mat-button-toggle [checked]="isTrue" (change)="isTrue" = $event.source.checked">
+      Sign Up</mat-button-toggle> -->
+      <button mat-raised-button class="button1">Sign Up</button>
+      <button mat-raised-button class="button1" (click)="login()" [routerLink]="['/login']">Login</button>
     </mat-card-header>
     <mat-card-content>
       <div class="row">
         <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Company" formControlName="company">
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="First name" formControlName="firstName">
-            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
-              First name is <strong>required</strong>
+          First name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="First name"
+              formControlName="firstName"
+              required
+            />
+            <mat-error
+              *ngIf="loginForm.controls['firstName'].hasError('required')"
+            >
+              First name is required
             </mat-error>
           </mat-form-field>
         </div>
         <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Last name" formControlName="lastName">
-            <mat-error *ngIf="addressForm.controls['lastName'].hasError('required')">
-              Last name is <strong>required</strong>
-            </mat-error>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <textarea matInput placeholder="Address" formControlName="address"></textarea>
-            <mat-error *ngIf="addressForm.controls['address'].hasError('required')">
-              Address is <strong>required</strong>
-            </mat-error>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row" *ngIf="!hasUnitNumber">
-        <div class="col">
-          <button mat-button type="button" (click)="hasUnitNumber = !hasUnitNumber">
-            + Add C/O, Apt, Suite, Unit
-          </button>
-        </div>
-      </div>
-      <div class="row" *ngIf="hasUnitNumber">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <textarea matInput placeholder="Address 2" formControlName="address2"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="City" formControlName="city">
-            <mat-error *ngIf="addressForm.controls['city'].hasError('required')">
-              City is <strong>required</strong>
-            </mat-error>
-          </mat-form-field>
-        </div>
-        <div class="col">
-          <mat-form-field class="full-width">
-            <mat-select placeholder="State" formControlName="state">
-              <mat-option *ngFor="let state of states" [value]="state.abbreviation">
-                {{ state.name }}
-              </mat-option>
-            </mat-select>
-            <mat-error *ngIf="addressForm.controls['state'].hasError('required')">
-              State is <strong>required</strong>
+          Email
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput type="email"
+              placeholder="Email"
+              formControlName="email"
+              required
+            />
+            <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+              Last name is required
             </mat-error>
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput #postalCode maxlength="5" placeholder="Postal Code" type="number" formControlName="postalCode">
-            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          Last name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Last name"
+              formControlName="lastname"
+              required
+            />
+            <mat-error
+              *ngIf="loginForm.controls['lastname'].hasError('required')"
+            >
+              Last name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Mobile number
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput type="number"
+              placeholder="Mobile Number"
+              formControlName="mobno"
+              required
+            />
+            <mat-error *ngIf="loginForm.controls['mobno'].hasError('required')">
+              Mobile Number is required
+            </mat-error>
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <mat-radio-group formControlName="shipping">
-            <mat-radio-button value="free">Free Shipping</mat-radio-button>
-            <mat-radio-button value="priority">Priority Shipping</mat-radio-button>
-            <mat-radio-button value="nextday">Next Day Shipping</mat-radio-button>
-          </mat-radio-group>
+          Company name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Company name"
+              formControlName="compname"
+              required
+            />
+            <mat-error
+              *ngIf="loginForm.controls['compname'].hasError('required')"
+            >
+              Company name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Password
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+                  matInput type="password"
+              placeholder="Password"
+              formControlName="pswd"
+              required
+            />
+            <mat-error *ngIf="loginForm.controls['mobno'].hasError('required')">
+              Password is required
+            </mat-error>
+          </mat-form-field>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col">
+          Designation
+          <mat-form-field class="full-width" appearance="outline" required>
+            <input matInput  placeholder="Designation" formControlName="desig" />
+            <mat-error *ngIf="loginForm.controls['desig'].hasError('required')">
+              Designation is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Confirm Password
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput type="password"
+              placeholder="Confirm Password"
+              formControlName="cpswd"
+            />
+            <mat-error *ngIf="loginForm.controls['cpswd'].hasError('required')">
+              Confirm Password is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col"></div>
+      <input id="checkbox" type="checkbox" />
+      <label for="checkbox">
+        I agree to these <a href="#">Terms and Conditions</a>.</label
+      >
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Submit</button>
+      <div class="row">
+        <button mat-raised-button color="primary" type="submit">Sign Up</button>
+      </div>
     </mat-card-actions>
   </mat-card>
 </form>

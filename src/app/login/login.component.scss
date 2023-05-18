@@ -1,0 +1,104 @@
+@import Url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.full-width {
+    width: 100%;
+  }
+  
+  .shipping-card {
+    min-width: 120px;
+    margin: 20px auto;
+  }
+  
+  .mat-radio-button {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col {
+    flex: 1 1 auto;
+
+    margin-left: 50px;
+  }
+  
+  .col:last-child {
+    margin-right: 100px;
+  }
+  :host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+
+  .mat-form-field {
+    width: 90%;
+    min-width: 200px;
+  }
+  .mat-card-header{
+    display: flex;
+    justify-content:left;
+    margin-left: 60px;
+  }
+
+
+  .mat-card-title,
+ .mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+.content{
+  margin-left: 160px;
+}
+
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+
+  .button1 {
+    display: flex;
+     justify-content: center;
+      margin-right: 10px;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 14px;
+      align-items: center;
+     background-color: black;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+    
+  }
+.filds h3{
+  margin-left: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+color: rgba(0, 0, 0, 0.8);
+  }
+  .login-container{
+    width: 595px;
+    height: 420px;
+    left: 423px;
+    top: 340px;
+    
+    background: #FFFFFF;
+  }
+::ng-deep .mat-raised-button{
+  background-color: rebeccapurple;
+}
