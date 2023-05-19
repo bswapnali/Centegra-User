@@ -34,7 +34,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
 import { AccountCreatedDialogComponent } from './signup/account-created-dialog/account-created-dialog.component';
+import { RegistrationdetailsComponent } from './registrationdetails/registrationdetails.component';
 import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +56,7 @@ import { MatCardModule } from '@angular/material/card';
     SelectLocationComponent,
     LoginComponent,
     AccountCreatedDialogComponent,
+    RegistrationdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatDialogModule,
-  ],
+ 
+    ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
