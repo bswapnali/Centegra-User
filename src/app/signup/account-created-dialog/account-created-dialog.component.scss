@@ -1,0 +1,43 @@
+.container{
+    height: 400px;
+}
+.CloseBtn{
+    margin: 20px;
+    float: right;
+}
+.CloseIcon{
+    transform: scale(1);
+}
+.CloseBtn button{
+    width: 22px;
+    height: 10px;
+}
+.message{
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    margin: 20px;
+    top: 110px;
+}
+.CheckIcon{
+    transform: scale(2.5);
+}
+.message h5{
+    margin-top: 40px;
+    line-height: 24px;
+    font-size: 29px;
+}
+.activation-link{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    line-height: 24px;
+}
+.activation-link p{
+    font-size: 16px;
+}
+.activation-link a{
+    font-size: 16px;
+    font-weight: bold;
+}

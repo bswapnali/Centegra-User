@@ -15,6 +15,7 @@ import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectLocationComponent } from './network/select-location/select-location.component';
 import { LoginComponent } from './login/login.component';
+import { AccountCreatedDialogComponent } from './signup/account-created-dialog/account-created-dialog.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'navbar',component:NavbarComponent},
   {path:'select-location',component:SelectLocationComponent},
+  {path:'account-created-dialog',component:AccountCreatedDialogComponent},
 
 
 

@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AccountCreatedDialogComponent } from './account-created-dialog/account-created-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +12,7 @@ import { Router } from '@angular/router';
 export class SignupComponent {
   toggle = true;
   private fb = inject(FormBuilder);
-  constructor(private route:Router){}
+  constructor(private route:Router, public dialog:MatDialog){}
   loginForm = this.fb.group({
     // company: null,
     firstName: [null, Validators.required],
@@ -49,6 +51,15 @@ export class SignupComponent {
   login(){
     this.route.navigate(['/login'])
   }
-  
+  onSignUp(): void {
+    const dialogRef = this.dialog.open(AccountCreatedDialogComponent, {
+      width: '1100px',
+      height: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(res => {
+      console.log('The dialog was closed');
+    });
+  }
 }
 

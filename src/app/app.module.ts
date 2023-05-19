@@ -21,7 +21,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -34,6 +33,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule} from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
+import { AccountCreatedDialogComponent } from './signup/account-created-dialog/account-created-dialog.component';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,7 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     SelectLocationComponent,
     LoginComponent,
+    AccountCreatedDialogComponent,
   ],
   imports: [
     BrowserModule,
