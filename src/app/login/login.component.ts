@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,23 +9,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required]);
- 
   show: boolean= false;
   toggle = true;
+
   private fb = inject(FormBuilder);
-  constructor(private route:Router){}
+  
+  constructor(private route:Router, public dialog:MatDialog){}
   loginForm = this.fb.group({
     // company: null,
-    email: [null,Validators.required],
-    pswd: [null, Validators.required]
+    
   });
-
-  hasUnitNumber = false;
-
-
   login(){
     this.route.navigate(['/login'])
   }
@@ -34,6 +30,7 @@ export class LoginComponent {
   // this.password = "";
   this.show = true;
   }
+
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'Enter valid email';
@@ -41,10 +38,20 @@ export class LoginComponent {
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
+  getErrorMsg(){
+      if (this.password.hasError('required')) {
+        return 'Enter a valid password';
+      }
+  
+      return this.email.hasError('email') ? 'Not a valid password' : '';
+    }
+  
   
   Submit(): void {
     console.log('Thanks!');
   }
+
+  
 }
 
   
