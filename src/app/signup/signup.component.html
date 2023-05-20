@@ -1,28 +1,21 @@
-
+<div class="sign-content">
 <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
-  <mat-card class="log-card">
-    <!-- <mat-card-header>
-      <button class="button1" mat-raised-button-toggle>Sign Up</button>
-      <button class="button1" mat-raised-button-toogle>Login</button> -->
-      <!-- <mat-button-toggle [checked]="isTrue" (change)="isTrue" = $event.source.checked">
-      Sign Up</mat-button-toggle> -->
-      <!-- <button mat-raised-button class="button1">Sign Up</button>
-      <button mat-raised-button class="button1" (click)="login()" [routerLink]="['/login']">Login</button>
-    </mat-card-header>-->
-    <mat-card-content> 
+  <div class="CloseBtn">
+    <button mat-mini-fab color="transperent" matDialogClose>
+        <mat-icon class="CloseIcon">cancel</mat-icon>
+    </button>
+</div>
+    <mat-card-header>
+      <button mat-raised-button class="button1" style="background-color: black;color: #FFFFFF; width:100px;">Sign Up</button>
+      <button mat-raised-button class="button1" (click)="login()" [routerLink]="['/login']" style="width: 95.4px;">Login</button>
+    </mat-card-header>
+    <mat-card-content>
       <div class="row">
         <div class="col">
           First name
           <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput
-              placeholder="First name"
-              formControlName="firstName"
-              required
-            />
-            <mat-error
-              *ngIf="loginForm.controls['firstName'].hasError('required')"
-            >
+            <input matInput placeholder="Enter first name" formControlName="firstName" required />
+            <mat-error *ngIf="loginForm.controls['firstName'].hasError('required')">
               First name is required
             </mat-error>
           </mat-form-field>
@@ -30,14 +23,9 @@
         <div class="col">
           Email
           <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput type="email"
-              placeholder="Email"
-              formControlName="email"
-              required
-            />
+            <input matInput type="email" placeholder="Enter email address" formControlName="email" required />
             <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
-              Last name is required
+              Email Id is required
             </mat-error>
           </mat-form-field>
         </div>
@@ -46,28 +34,16 @@
         <div class="col">
           Last name
           <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput
-              placeholder="Last name"
-              formControlName="lastname"
-              required
-            />
-            <mat-error
-              *ngIf="loginForm.controls['lastname'].hasError('required')"
-            >
+            <input matInput placeholder="Enter last name" formControlName="lastname" required />
+            <mat-error *ngIf="loginForm.controls['lastname'].hasError('required')">
               Last name is required
             </mat-error>
           </mat-form-field>
         </div>
         <div class="col">
           Mobile number
-          <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput type="number"
-              placeholder="Mobile Number"
-              formControlName="mobno"
-              required
-            />
+          <mat-form-field class="full-width" appearance="outline" >
+            <input matInput type="number" placeholder="Enter mobile no." formControlName="mobno" required />
             <mat-error *ngIf="loginForm.controls['mobno'].hasError('required')">
               Mobile Number is required
             </mat-error>
@@ -78,15 +54,8 @@
         <div class="col">
           Company name
           <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput
-              placeholder="Company name"
-              formControlName="compname"
-              required
-            />
-            <mat-error
-              *ngIf="loginForm.controls['compname'].hasError('required')"
-            >
+            <input matInput placeholder="Enter company name" formControlName="compname" required />
+            <mat-error *ngIf="loginForm.controls['compname'].hasError('required')">
               Company name is required
             </mat-error>
           </mat-form-field>
@@ -94,12 +63,7 @@
         <div class="col">
           Password
           <mat-form-field class="full-width" appearance="outline">
-            <input
-                  matInput type="password"
-              placeholder="Password"
-              formControlName="pswd"
-              required
-            />
+            <input matInput type="password" placeholder="Enter password" formControlName="pswd" required />
             <mat-error *ngIf="loginForm.controls['mobno'].hasError('required')">
               Password is required
             </mat-error>
@@ -111,7 +75,7 @@
         <div class="col">
           Designation
           <mat-form-field class="full-width" appearance="outline" required>
-            <input matInput  placeholder="Designation" formControlName="desig" />
+            <input matInput placeholder="Designation" formControlName="desig" />
             <mat-error *ngIf="loginForm.controls['desig'].hasError('required')">
               Designation is required
             </mat-error>
@@ -120,27 +84,23 @@
         <div class="col">
           Confirm Password
           <mat-form-field class="full-width" appearance="outline">
-            <input
-              matInput type="password"
-              placeholder="Confirm Password"
-              formControlName="cpswd"
-            />
+            <input matInput type="password" placeholder="Confirm Password" formControlName="cpswd" />
             <mat-error *ngIf="loginForm.controls['cpswd'].hasError('required')">
               Confirm Password is required
             </mat-error>
           </mat-form-field>
         </div>
       </div>
-      <div class="col"></div>
-      <input id="checkbox" type="checkbox" />
-      <label for="checkbox">
-        I agree to these <a href="#">Terms and Conditions</a>.</label
-      >
+      <div class="col">
+      <input id="checkbox" type="checkbox" style="margin-left: 485px;"/>
+      <label for="checkbox" >
+        I agree with  the <a href="#">Terms & Conditions</a>.</label>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-      <div class="row">
-        <button mat-raised-button color="primary" (click)="onSignUp()" type="submit">Sign Up</button>
+      <div class="row"style="margin-left: 485px;">
+        <button mat-raised-button color="primary" (click)="onSignUp()" type="submit" style="background-color: black; color: #FFFFFF;width:455px; margin-top:20px;">Sign Up</button>
       </div>
     </mat-card-actions>
-  </mat-card>
 </form>
+</div>

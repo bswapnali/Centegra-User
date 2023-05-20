@@ -3,81 +3,86 @@
 
 
 .full-width {
-    width: 100%;
-  }
-  
-  .shipping-card {
-    min-width: 20px;
-    margin: 20px auto;
-  }
- 
-  .mat-radio-button {
-    display: block;
-    margin: 8px 0;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .col {
-    flex: 1 1 auto;
-    margin-left: 50px;
-  }
-  
-  .col:last-child {
-    margin-right: 100px;
-  }
-  :host {
-    display: flex;
-  }
-
-  .mat-form-field {
-    // width: 120%;
-    min-width: 200px;
-  }
-  .mat-card-header{
-    display: flex;
-   
-   
-  }
-  .mat-mdc-card-header {
-    display: flex;
-    padding: 21px 5px 0px;
+  width: 100%;
 }
+
+.shipping-card {
+  min-width: 20px;
+  margin: 20px auto;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 8px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1 1 auto;
+  margin-left: 50px;
+}
+
+.col:last-child {
+  margin-right: 100px;
+}
+
+:host {
+  display: flex;
+}
+
+.mat-form-field {
+  // width: 120%;
+  min-width: 200px;
+}
+
+.mat-card-header {
+  display: flex;
+
+
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  padding: 21px 5px 0px;
+}
+
 .mat-card-title,
- .mat-card-content {
-    display: flex;
-    justify-content: center;
-  }
-.content{
+.mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
   margin-left: 160px;
 }
 
-  .error {
-    padding: 16px;
-    width: 300px;
-    color: white;
-    background-color: red;
-  }
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
 
-  .button1 {
-    display: flex;
-    margin-top: 40px;
-     justify-content: center;
-      margin-right: 10px;
-      font-family: 'Roboto';
-      font-weight: 500;
-      font-size: 14px;
-      align-items: center;
-     background-color: black;
-      background: #FFFFFF;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      border-radius: 6px;
-    
-  }
-.filds h3{
+.button1 {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  margin-right: 10px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  background-color: black;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.filds h3 {
   // margin-left:90px;
   margin-top: 5px;
   font-family: 'Roboto';
@@ -90,32 +95,31 @@
   align-items: center;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
-  }
-  .login-container{
-    margin: 0;
-    padding: 0;
-  }
-  .login-content{
+}
+
+.login-container {
+  margin: 0;
+  padding: 0;
+}
+
+.login-content {
   margin-left: 40px;
   margin-top: 35px;
- align-items: left; 
- position: relative;
-  }
+  align-items: left;
+  position: relative;
+}
 
-  .example-full-width{
-    left:40px;
-  }
-  /* close butn css*/
+.example-full-width {
+  left: 40px;
+}
 
-  .CloseBtn{
-        margin-top: 40px;
-        // margin-right: 13px;
-        float: right;
-    }
-    // .CloseIcon{
-    //     // transform: scale(1);
-    // }
-    .CloseBtn button{
-        width: 25px;
-        height: 25px;
-    }
+/* close butn css*/
+
+.CloseBtn {
+  margin-top: 40px;
+  float: right;
+}
+.CloseBtn button {
+  width: 25px;
+  height: 25px;
+}

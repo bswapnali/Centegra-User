@@ -1,27 +1,117 @@
+.sign-content{
+  margin-left: 40px;
+  margin-top: 1px;
+  // align-items: left;
+  // position: relative;
+}
+
 .full-width {
   width: 100%;
 }
-
+:host {
+  display: flex;
+  
+}
 .shipping-card {
   min-width: 120px;
   margin: 20px auto;
 }
-
 .mat-radio-button {
   display: block;
-  margin: 5px 0;
+  margin: 5px 2px;
 }
 
 .row {
   display: flex;
-  flex-direction: row;
+    flex-direction: row;
+    line-height: 20px;
 }
 
 .col {
   flex: 1;
-  margin-right: 20px;
+  // margin-top: 20px;
+  margin-right: 40px;
+
 }
 
 .col:last-child {
-  margin-right: 0;
+  margin-right:30px;
+}
+
+
+/* close butn css*/
+
+.CloseBtn{
+  margin-left: 400px;
+  margin-top: 10px;
+  float: right;
+}
+.CloseIcon{
+  transform: scale(1);
+}
+.CloseBtn button{
+  width: 22px;
+  height: 10px;
+}
+.mat-mdc-card-header {
+  display: flex;
+  padding: 22px 15px 10px;
+  width: 240.4px;
+}
+// .mat-mdc-button-touch-target {
+//   top: 64px;
+//   height: 48px;
+//   left: -12px;
+//   width: 48px;
+//   transform: translate(-50%, -50%);
+// }
+.mat-mdc-fab .mat-mdc-button-touch-target, .mat-mdc-mini-fab .mat-mdc-button-touch-target {
+  position: absolute;
+  top: -26px;
+  left: -5px;
+  width: 48px;
+  transform: translate(-171%, -106%);
+}
+/* sign log btn css*/
+
+.button1 {
+// justify-content: space-between;
+margin-right: 20px;
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+align-items: center;
+background-color: black;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-radius: 6px;
+}
+.mat-form-filed{
+ padding: 40px;
+ margin-top:8px;
+ height:-20px;
+ width:494px;
+ border-radius: 6px;
+}
+.matInput{
+  width: 50px;
+}
+
+.mdc-text-field {
+ // display: inline-flex;
+  align-items: center;
+  padding: -30px 29px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  // will-change: opacity,transform,color;
+}
+.mat-mdc-text-field-wrapper {
+  width: 439px;
+  left: 40px;
+}
+
+.mat-mdc-text-field-wrapper {
+  height: 20px;
+  flex: -1;
 }
