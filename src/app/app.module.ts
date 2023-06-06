@@ -1,4 +1,4 @@
-import { NgModule ,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,11 +31,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
 import { AccountCreatedDialogComponent } from './signup/account-created-dialog/account-created-dialog.component';
 import { RegistrationdetailsComponent } from './registrationdetails/registrationdetails.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { MatCardModule } from '@angular/material/card';
     SelectLocationComponent,
     LoginComponent,
     AccountCreatedDialogComponent,
-    RegistrationdetailsComponent
+    RegistrationdetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,12 +77,10 @@ import { MatCardModule } from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatDialogModule,
- 
-    ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
+    MatDatepickerModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
