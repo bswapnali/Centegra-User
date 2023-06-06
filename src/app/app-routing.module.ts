@@ -22,7 +22,7 @@ import { RegistrationdetailsComponent } from './registrationdetails/registration
 const routes: Routes = [
   //  {path:'header2',component:Header2Component},
   {path:'',component:HomeComponent},
-  // {path:'footer',component:FooterComponent},
+  {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'leasing',component:LeasingComponent},
   {path:'listing',component:ListingComponent},
