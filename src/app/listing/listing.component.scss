@@ -125,9 +125,12 @@
 .kyc-signup-details {
   /* align-items: center; */
   justify-content: center;
+ 
+
 }
 
 .signup-img {
+  
   width: 83px;
   height: 83px;
   background: rgba(241, 239, 239, 0.47);
@@ -141,7 +144,7 @@
 }
 
 .kyc-container {
-  /* background-image: url(../../assets/Images/LineforListing.png); */
+  
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -149,6 +152,13 @@
   width: 100%;
   /* transform: rotate(30deg); */
 }
+.kyc-signup-details{
+ background-image: url(../../assets/Images/Vector1.jpg);
+background-repeat: no-repeat;
+object-position: 250px 125px;
+// width: 100px;
+}
+
 
 .listing-working-heading h1 {
   align-items: center;
