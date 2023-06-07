@@ -1,3 +1,182 @@
-p {
-    font-family: Lato;
-  }
+.listing_wanner {
+  width: 100%;
+  background-image: url(../../assets/Images/ListingEnvImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.listing_wanner h1 {
+  align-items: center;
+  text-align: center;
+  padding-top: 70px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.listing_wanner p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-mute {
+  width: 126x;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.listing-warehouse-property {
+  height: 550px;
+  padding-top: 50px;
+}
+
+.warehouse-property-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.warehouse-property-heading h1 {
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.icon-discription {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 15px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: rgba(12, 31, 87, 0.1);
+}
+
+.discriptions p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.discriptions span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.listing-working-steps {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.signup-kyc-other-details {
+  align-items: center;
+  text-align: -webkit-center;
+  justify-content: center;
+}
+
+.kyc-signup-details {
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.signup-img {
+  width: 83px;
+  height: 83px;
+  background: rgba(241, 239, 239, 0.47);
+  border-radius: 50%;
+  align-items: center;
+}
+
+.signup-img img {
+  width: 50%;
+  padding-top: 20px;
+}
+
+.kyc-container {
+  /* background-image: url(../../assets/Images/LineforListing.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* transform: rotate(30deg); */
+}
+
+.listing-working-heading h1 {
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.kyc-header h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.kyc-header span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
