@@ -1,14 +1,16 @@
-<div class="container">
-    <div class="bg-image">
-        <div class="network-heading">
-            <h1>Network</h1>
-            <p>
-                We have a diverse range of units listed from ambient warehouses, refrigerated and frozen units. Office and mezzanine<br>
-                units are available at various locations in 10 major cities across 8 states
-            </p>
-        </div>
-        <div class="network-heading-buttons">
-            <!-- <div class="rating-button">
+<div class="network-wrapper">
+  <div class="bg-image">
+    <div class="network-heading">
+      <h1>Network</h1>
+      <p>
+        We have a diverse range of units listed from ambient warehouses,
+        refrigerated and frozen units. Office and mezzanine<br />
+        units are available at various locations in 10 major cities across 8
+        states
+      </p>
+    </div>
+    <div class="network-heading-buttons">
+      <!-- <div class="rating-button">
                 <mat-form-field class="RatingBtn" appearance="fill">
                     <mat-label class="Ratinglabel">Rating</mat-label>
                     <mat-select>
@@ -18,27 +20,33 @@
                     </mat-select>
                 </mat-form-field>
             </div> -->
-            <div class="RatingBtn">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Rating</option>
-                    <option value="1">1 Star</option>
-                    <option value="2">2 Star</option>
-                    <option value="3">3 Star</option>
-                    <option value="4">4 Star</option>
-                    <option value="5">5 Star</option>
-                  </select>
-            </div>
-            <div class="input-buttons">
-                <input class="Search rounded-pill mr-1 pr-5" type="search" id="InputBar" placeholder="Search City, State for Warehouse">
-                <button class="SearchBtn" type="button">
-                    <i class="bi bi-search" style="color: #ffffff;"></i>
-                </button>
-            </div>
-            <div class="LocationBtn">
-                <button mat-button (click)="SelectLocation()">
-                    <!-- [matMenuTriggerFor]="menu" #menuTrigger -->
-                    <i class="bi bi-geo-alt-fill"></i> Select Location</button>
-                    <!-- <mat-menu #menu="matMenu" class="SelectLocationMenu">
+      <div class="RatingBtn">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Rating</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Star</option>
+          <option value="3">3 Star</option>
+          <option value="4">4 Star</option>
+          <option value="5">5 Star</option>
+        </select>
+      </div>
+      <div class="input-buttons">
+        <input
+          class="Search rounded-pill mr-1 pr-5"
+          type="search"
+          id="InputBar"
+          placeholder="Search City, State for Warehouse"
+        />
+        <button class="SearchBtn" type="button">
+          <i class="bi bi-search" style="color: #ffffff"></i>
+        </button>
+      </div>
+      <div class="LocationBtn">
+        <button mat-button (click)="SelectLocation()">
+          <!-- [matMenuTriggerFor]="menu" #menuTrigger -->
+          <i class="bi bi-geo-alt-fill"></i> Select Location
+        </button>
+        <!-- <mat-menu #menu="matMenu" class="SelectLocationMenu">
                         <div class="location-heading">
                             <h5>Search your loaction</h5>
                             <p>type your state,city</p>
@@ -72,22 +80,24 @@
                             </div>
                         </div>
                     </mat-menu> -->
-            </div>
-        </div>        
-    </div>
-    <div class="float-container">
-
-        <div class="float-child1">
-          <div class="green">Float Column 1</div>
-        </div>
-        
-        <div class="float-child2">
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1mcRUUuERWn7n6aTN3_-QXXFsJTDaxI8&ehbc=2E312F"
-                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        
       </div>
-    
+    </div>
+  </div>
+  <div class="network-container">
+    <div class="network-container-child1">
+      <div class="green">Float Column 1</div>
+    </div>
+
+    <div class="network-container-child2">
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1mcRUUuERWn7n6aTN3_-QXXFsJTDaxI8&ehbc=2E312F"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 </div>
