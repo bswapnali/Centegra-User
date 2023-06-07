@@ -223,9 +223,130 @@ mat-select {
 }
 
 .checked {
-  color: orange;
+  color: gold;
 }
 
 .half-star {
-  color: orange;
+  color: gold;
+}
+.warehouse-left-image {
+  width: 25%;
+}
+.warehouse-right-details {
+  width: 75%;
+}
+.warehouse-right-details h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+.warehouse-right-details p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.warehouse-right-details span {
+  color: #494949;
+  font-weight: 400;
+  font-size: 12px;
+}
+.rating {
+  align-items: center;
+}
+.rating p {
+  margin-top: 2px;
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: black !important;
+  color: white !important;
+}
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  border-radius: 5px !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.mat-mdc-checkbox.mat-accent {
+  --mdc-checkbox-selected-checkmark-color: #ffff;
+  --mdc-checkbox-selected-focus-icon-color: #11110f;
+  --mdc-checkbox-selected-hover-icon-color: #181716;
+  --mdc-checkbox-selected-icon-color: #0f0f0f;
+  --mdc-checkbox-selected-pressed-icon-color: #30302d;
+  --mdc-checkbox-unselected-focus-icon-color: #0e0d0d;
+  --mdc-checkbox-unselected-hover-icon-color: #212121;
+  --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38);
+  --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38);
+  --mdc-checkbox-unselected-icon-color: rgba(0, 0, 0, 0.54);
+  --mdc-checkbox-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+}
+// ::ng-deep.mat-checkbox-ripple .mat-ripple-element,
+// .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+//   background-color: blue !important;
+// }
+// ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+//   background-color: black !important;
+// }
+
+// .mat-mdc-checkbox.mat-accent,
+// .checked {
+//   background-color: #333333;
+//   .mat-checkbox-background::after {
+//     background-color: #000000;
+//   }
+// }
+// ::ngdeep
+//   .mat-mdc-checkbox.mat-accent
+//   .mdc-checkbox--selected
+//   ~ .mdc-checkbox__ripple {
+//   background-color: #000000 !important;
+// }
+//   background-color: #f0e5e5;
+//   // mdc-checkbox-selected-icon-color: #585548;
+//   mdc-checkbox-selected-icon-color: black !important;
+// }
+// ::ng-deep .mat-checkbox-checkmark-path {
+//   stroke: black !important;
+// }
+
+// ::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+//   background-color: black !important;
+// }
+// ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+//   background-color: black !important;
+// }
+.heading-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-otherDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+::ng-deep.mat-mdc-button-persistent-ripple .mdc-button__ripple {
+  background-color: #000000 !important;
+  color: white !important;
+}
+
+// .booking-btns:nth-child(2) {
+//   background-color: #000000 !important;
+//   color: white !important;
+// }
+
+.example-viewport {
+  height: 400px;
+  width: 650px;
+  // border: 1px solid black;
+}
+
+.example-item {
+  height: 50px;
 }

@@ -37,7 +37,12 @@ import { AccountCreatedDialogComponent } from './signup/account-created-dialog/a
 import { RegistrationdetailsComponent } from './registrationdetails/registrationdetails.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-
+import { NgxStarRatingModule } from 'ngx-star-rating';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { StarRatingModule } from 'angular-star-rating';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +83,14 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatListModule,
     MatDialogModule,
     MatDatepickerModule,
+    NgxStarRatingModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    StarRatingModule.forRoot(),
+    MatCheckboxModule,
+    ScrollingModule,
   ],
+
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent],
