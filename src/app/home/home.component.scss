@@ -242,11 +242,11 @@ form select {
   color: #000000;
 }
 .left-content-data-two {
-  text-align: justify;
-  margin-top: 30px;
+  text-align: left;
+  margin-top: 8%;
   width: 25%;
   position: absolute;
-  margin-left: 20%;
+  margin-left: 76%;
   float: right;
 }
 .left-content-data-two p {
@@ -268,9 +268,12 @@ form select {
 }
 
 .left-content-data-three {
-  text-align: justify;
-  margin-left: 255px;
-  //  margin-top: 265px;
+  text-align: left;
+  margin-top: 38%;
+  width: 25%;
+  position: absolute;
+  margin-left: 20%;
+  float: right;
 }
 
 .left-content-data-three p {
@@ -292,9 +295,12 @@ form select {
 }
 
 .left-content-data-four {
-  text-align: justify;
-  margin-left: 551px;
-  margin-top: 190px;
+  text-align: left;
+  margin-top: 57%;
+  width: 25%;
+  position: absolute;
+  margin-left: 42%;
+  float: right;
 }
 
 .left-content-data-four p {
@@ -317,8 +323,11 @@ form select {
 
 .left-content-data-five {
   text-align: left;
-  margin-left: 1010px;
-  // margin-top: 13px;
+  margin-top: 41%;
+  width: 13%;
+  position: absolute;
+  margin-left: 90%;
+  float: right;
 }
 .left-content-data-five p {
   font-family: "Roboto";
@@ -337,7 +346,31 @@ form select {
   line-height: 14px;
   color: #000000;
 }
-
+.left-content-data-six {
+  text-align: left;
+  margin-top: 57%;
+  width: 17%;
+  position: absolute;
+  margin-left: 84%;
+  float: right;
+}
+.left-content-data-six p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 10px;
+}
+.left-content-data-six span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
 .count-number-two p {
   align-items: center;
   margin-top: 7px;
@@ -442,8 +475,12 @@ form select {
 }
 
 .left-content-data-seven {
-  margin-top: 60px;
-  margin-left: 10px;
+  text-align: left;
+  margin-top: 93%;
+  width: 13%;
+  position: absolute;
+  margin-left: 60%;
+  float: right;
 }
 
 .left-content-data-seven p {
