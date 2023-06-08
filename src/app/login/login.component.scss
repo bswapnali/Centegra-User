@@ -98,12 +98,14 @@
 }
 
 .login-container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  overflow: hidden;
 }
 
 .login-content {
-  margin-left: 40px;
+  // margin-left: 40px;
+  margin: 0 auto;
   margin-top: 35px;
   align-items: left;
   position: relative;

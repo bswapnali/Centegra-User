@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -43,6 +43,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { StarRatingModule } from 'angular-star-rating';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +64,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     LoginComponent,
     AccountCreatedDialogComponent,
     RegistrationdetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -89,6 +91,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     StarRatingModule.forRoot(),
     MatCheckboxModule,
     ScrollingModule,
+    FormsModule,
+    HttpClientModule
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

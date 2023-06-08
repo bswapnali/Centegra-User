@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import {MatRadioModule} from '@angular/material/radio';
 
 interface Food {
   value: string;

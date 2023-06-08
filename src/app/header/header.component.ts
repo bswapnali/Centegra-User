@@ -18,8 +18,8 @@ export class HeaderComponent implements OnInit {
 
   onLogin(): void {
     const dialogRef = this.dialog.open(LoginComponent, {
-      width: '595px',
-      height: '490px',
+      width: '50%',
+      height: '80%',
     });
 
     dialogRef.afterClosed().subscribe(result => {

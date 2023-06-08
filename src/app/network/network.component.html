@@ -10,15 +10,44 @@
       </p>
     </div>
     <div class="network-heading-buttons">
+        <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select Rating
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+              <a class="dropdown-item" *ngFor="let rating of ratings"[value]="rating">
+                <input type="radio" name="rating" [value]="rating">
+                {{ rating }} stars
+              </a>
+            </div>
+          </div>
+          
+          <p>Selected Rating: {{ selectedRating }}</p> -->
       <div class="RatingBtn">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Rating</option>
-          <option value="1">1 Star</option>
-          <option value="2">2 Star</option>
-          <option value="3">3 Star</option>
-          <option value="4">4 Star</option>
-          <option value="5">5 Star</option>
-        </select>
+         <!-- <mat-form-field>
+            <mat-label>Select rating</mat-label>
+            <mat-select [(value)]="selectedRating" hidden>
+              <mat-option *ngFor="let rating of ratings" [value]="rating">
+                <mat-radio-button [value]="rating">
+                  <mat-icon class="star-icon">{{ rating > 0 ? 'star' : 'star_border' }}</mat-icon>
+                  <mat-icon class="star-icon">{{ rating > 1 ? 'star' : 'star_border' }}</mat-icon>
+                  <mat-icon class="star-icon">{{ rating > 2 ? 'star' : 'star_border' }}</mat-icon>
+                  <mat-icon class="star-icon">{{ rating > 3 ? 'star' : 'star_border' }}</mat-icon>
+                  <mat-icon class="star-icon">{{ rating > 4 ? 'star' : 'star_border' }}</mat-icon>
+                </mat-radio-button>
+              </mat-option>
+            </mat-select>
+          </mat-form-field> -->
+          <div class="dialog-arrow" ></div>
+          <mat-form-field>
+            <mat-label>Select rating</mat-label>
+            <mat-select [(value)]="selectedRating" placeholder="Select rating">
+              <mat-option *ngFor="let rating of ratings" [value]="rating">
+                <ngb-rating [rate]="5" [readonly]="true" [max]="5"></ngb-rating>
+             <mat-radio-button>{{rating.number}}  {{ getStarRating(rating.number) }}</mat-radio-button> 
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
       </div>
       <div class="input-buttons">
         <input
@@ -114,7 +143,7 @@
                     <i class="bi bi-star-half" style="color: gold"></i>
                     <span>&nbsp; &nbsp;(240 Reviews) </span>
                   </div>
-                  <div class="date-otherDetails">
+                  <!-- <div class="date-otherDetails">
                     <div class="date-availability">
                       <p>10/03/2023</p>
                       <span>Available From</span>
@@ -132,7 +161,7 @@
                       >&nbsp; &nbsp;
                       <button mat-raised-button color="disabled">Book</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </mat-card-content>
@@ -171,7 +200,7 @@
                     <i class="bi bi-star-half" style="color: gold"></i>
                     <span>&nbsp; &nbsp;(240 Reviews) </span>
                   </div>
-                  <div class="date-otherDetails">
+                  <!-- <div class="date-otherDetails">
                     <div class="date-availability">
                       <p>10/03/2023</p>
                       <span>Available From</span>
@@ -185,7 +214,7 @@
                         Get A Quote
                       </button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </mat-card-content>
@@ -200,7 +229,7 @@
               <div class="warehouse-right-details">
                 <div class="heading-checkbox">
                   <h3>XYZ003 - Central Warehouse, Nampally</h3>
-                  <mat-checkbox>Compare</mat-checkbox>
+                  <!-- <mat-checkbox>Compare</mat-checkbox> -->
                 </div>
                 <div class="paragraph-address-rating">
                   <p>
@@ -221,7 +250,7 @@
                     <i class="bi bi-star-half" style="color: gold"></i>
                     <span>&nbsp; &nbsp;(240 Reviews) </span>
                   </div>
-                  <div class="date-otherDetails">
+                  <!-- <div class="date-otherDetails">
                     <div class="date-availability">
                       <p>10/03/2023</p>
                       <span>Available From</span>
@@ -239,7 +268,7 @@
                       >&nbsp; &nbsp;
                       <button mat-raised-button color="disabled">Book</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </mat-card-content>
@@ -254,7 +283,7 @@
               <div class="warehouse-right-details">
                 <div class="heading-checkbox">
                   <h3>XYZ003 - Central Warehouse, Nampally</h3>
-                  <mat-checkbox>Compare</mat-checkbox>
+                 
                 </div>
                 <div class="paragraph-address-rating">
                   <p>
@@ -275,7 +304,7 @@
                     <i class="bi bi-star-half" style="color: gold"></i>
                     <span>&nbsp; &nbsp;(240 Reviews) </span>
                   </div>
-                  <div class="date-otherDetails">
+                  <!-- <div class="date-otherDetails">
                     <div class="date-availability">
                       <p>10/03/2023</p>
                       <span>Available From</span>
@@ -293,7 +322,7 @@
                       >&nbsp; &nbsp;
                       <button mat-raised-button color="disabled">Book</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </mat-card-content>

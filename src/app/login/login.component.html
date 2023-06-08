@@ -1,5 +1,5 @@
 <div class="login-container">
-    <div class="login-content">
+    <div class="login-content" id="">
         <div class="CloseBtn">
             <button mat-mini-fab color="transperent" matDialogClose>
                 <mat-icon class="CloseIcon">cancel</mat-icon>
@@ -12,24 +12,27 @@
         </mat-card-header>
         <div class="filds">
             <mat-card-content class="content">
-                <form [formGroup]="loginForm" novalidate (ngSubmit)="Submit()">
-                    <h3>Email address*</h3>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <h3>Email address<span style="color:red">*</span></h3>
                     <p>
                         <mat-form-field class="example-full-width" appearance="outline"
                             style="margin-top:-6px;height:-20px;width:494px;">
-                            <input matInput placeholder="Enter email address" [formControl]="email" type="email"
-                                required>
-                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            <input matInput placeholder="Enter email address"  formControlName="email" id="email" name="email" [(ngModel)]="email" required>
+                            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
+                                Emial Id is required
+                            </mat-error>
                         </mat-form-field>
                     </p>
-                    <h3 style="margin-top: -10px;">Password*</h3>
+                    <h3 style="margin-top: -10px;">Password<span style="color:red">*</span></h3>
                     <p>
                         <mat-form-field class="example-full-width" appearance="outline"
                             style="margin-top:-6px;height:-20px;width:494px;">
 
-                            <input matInput placeholder="Enter your password" [formControl]="password" type="password"
-                                required>
-                            <mat-error *ngIf="password.invalid">{{getErrorMsg()}}</mat-error>
+                            <input matInput placeholder="Enter your password" formControlName="password" id="password" name="password" [(ngModel)]="password" required>
+                            <mat-error *ngIf="loginForm.controls['password'].hasError('required')">
+                               Password is required
+                              </mat-error>
                         </mat-form-field>
                     </p>
                     <p>
@@ -45,7 +48,7 @@
                     </p>
                     <mat-card-actions style=" margin-top:-45px;float:left; text-align:left; ">
                         <div class="row">
-                            <button mat-raised-button color="primary" (click)="Submit()"
+                            <button mat-raised-button color="primary" type="submit"
                                 style="background-color: black; color: #FFFFFF; width:95.4px; width:494px; margin-top:60px;">Log
                                 In</button>
                             <span *ngIf="show"><button mat-button color="accent">Login success !!</button></span>
