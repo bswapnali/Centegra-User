@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+mat-card-header {
+  scroll-behavior: unset;
+  overflow-y: unset;
+  overflow-x: unset;
+}
+.mat-dialog-container ::ng-deep .mat-dialog-content {
+  overflow-y: hidden !important;
+}
+::ng-deep .mat-dialog-container {
+  overflow: hidden !important;
+}
+::ng-deep .mat-mdc-dialog-surface.mdc-dialog__surface {
+  overflow: hidden !important;
+}
+::ng-deep .mat-mdc-dialog-surface .mdc-dialog__surface {
+  overflow: hidden !important;
+}
