@@ -2,105 +2,199 @@
   <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
     <div class="CloseBtn">
       <button mat-mini-fab color="transperent" matDialogClose>
-          <mat-icon class="CloseIcon">cancel</mat-icon>
+        <mat-icon class="CloseIcon">cancel</mat-icon>
       </button>
-  </div>
-      <mat-card-header>
-        <button mat-raised-button class="button1" style="background-color: black;color: #FFFFFF; width:100px;">Sign Up</button>
-        <button mat-raised-button class="button1" (click)="signup()" [routerLink]="['/login']" style="width: 95.4px;">Login</button>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="row">
-          <div class="col">
-            First name
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput placeholder="Enter first name" formControlName="firstName" [(ngModel)]="firstName" required />
-              <mat-error *ngIf="signupForm.controls['firstName'].hasError('required')">
-                First name is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="col">
-            Email
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput type="email" placeholder="Enter email address" formControlName="email"  [(ngModel)]="email" required />
-              <mat-error *ngIf="signupForm.controls['email'].hasError('required')">
-                Email Id is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Last name
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput placeholder="Enter last name" formControlName="lastname" [(ngModel)]="lastname" required />
-              <mat-error *ngIf="signupForm.controls['lastname'].hasError('required')">
-                Last name is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="col">
-            Mobile number
-            <mat-form-field class="full-width" appearance="outline" >
-              <input matInput  placeholder="Enter mobile no." formControlName="mobno" [(ngModel)]="mobno" maxlength="10" required/>
-              <mat-error *ngIf="signupForm.controls['mobno'].hasError('required')">
-                Mobile Number is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Company name
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput placeholder="Enter company name" formControlName="compname" [(ngModel)]="compname" required />
-              <mat-error *ngIf="signupForm.controls['compname'].hasError('required')">
-                Company name is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="col">
-            Password
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput type="password" placeholder="Enter password" formControlName="pswd"  [(ngModel)]="pswd" required />
-              <mat-error *ngIf="signupForm.controls['mobno'].hasError('required')">
-                Password is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col">
-            Designation
-            <mat-form-field class="full-width" appearance="outline" required>
-              <input matInput placeholder="Designation" formControlName="desig"  [(ngModel)]="desig"/>
-              <mat-error *ngIf="signupForm.controls['desig'].hasError('required')">
-                Designation is required
-              </mat-error>
-            </mat-form-field>
-          </div>
-          <div class="col">
-            Confirm Password
-            <mat-form-field class="full-width" appearance="outline">
-              <input matInput type="password" placeholder="Confirm Password" formControlName="cpswd" [(ngModel)]="cpswd" />
-              <mat-error *ngIf="signupForm.controls['cpswd'].hasError('required')">
-                Confirm Password is required
-              </mat-error>
-            </mat-form-field>
-          </div>
+    </div>
+    <mat-card-header>
+      <button
+        mat-raised-button
+        class="button1"
+        style="background-color: black; color: #ffffff; width: 100px"
+      >
+        Sign Up
+      </button>
+      <button
+        mat-raised-button
+        class="button1"
+        (click)="onLogin()"
+        style="width: 95.4px"
+      >
+        Login
+      </button>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          First name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Enter first name"
+              formControlName="firstName"
+              [(ngModel)]="firstName"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['firstName'].hasError('required')"
+            >
+              First name is required
+            </mat-error>
+          </mat-form-field>
         </div>
         <div class="col">
-        <input id="checkbox" type="checkbox" style="margin-left: 485px;"/>
-        <label for="checkbox" >
-          I agree with  the <a href="#">Terms & Conditions</a>.</label>
+          Email
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              type="email"
+              placeholder="Enter email address"
+              formControlName="email"
+              [(ngModel)]="email"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['email'].hasError('required')"
+            >
+              Email Id is required
+            </mat-error>
+          </mat-form-field>
         </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <div class="row"style="margin-left: 485px;">
-          <button mat-raised-button color="primary" type="submit" style="background-color: black; color: #FFFFFF;width:455px; margin-top:20px;">Sign Up</button>
+      </div>
+      <div class="row">
+        <div class="col">
+          Last name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Enter last name"
+              formControlName="lastname"
+              [(ngModel)]="lastname"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['lastname'].hasError('required')"
+            >
+              Last name is required
+            </mat-error>
+          </mat-form-field>
         </div>
-      </mat-card-actions>
+        <div class="col">
+          Mobile number
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Enter mobile no."
+              formControlName="mobno"
+              [(ngModel)]="mobno"
+              maxlength="10"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['mobno'].hasError('required')"
+            >
+              Mobile Number is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Company name
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              placeholder="Enter company name"
+              formControlName="compname"
+              [(ngModel)]="compname"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['compname'].hasError('required')"
+            >
+              Company name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Password
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              type="password"
+              placeholder="Enter password"
+              formControlName="pswd"
+              [(ngModel)]="pswd"
+              required
+            />
+            <mat-error
+              *ngIf="signupForm.controls['mobno'].hasError('required')"
+            >
+              Password is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Designation
+          <mat-form-field class="full-width" appearance="outline" required>
+            <input
+              matInput
+              placeholder="Designation"
+              formControlName="desig"
+              [(ngModel)]="desig"
+            />
+            <mat-error
+              *ngIf="signupForm.controls['desig'].hasError('required')"
+            >
+              Designation is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          Confirm Password
+          <mat-form-field class="full-width" appearance="outline">
+            <input
+              matInput
+              type="password"
+              placeholder="Confirm Password"
+              formControlName="cpswd"
+              [(ngModel)]="cpswd"
+            />
+            <mat-error
+              *ngIf="signupForm.controls['cpswd'].hasError('required')"
+            >
+              Confirm Password is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col">
+        <input id="checkbox" type="checkbox" style="margin-left: 485px" />
+        <label for="checkbox">
+          I agree with the <a href="#">Terms & Conditions</a>.</label
+        >
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="row" style="margin-left: 485px">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          style="
+            background-color: black;
+            color: #ffffff;
+            width: 455px;
+            margin-top: 20px;
+          "
+        >
+          Sign Up
+        </button>
+      </div>
+    </mat-card-actions>
   </form>
-  </div>
+</div>
+
+<!-- [routerLink]="['/login']"  -->

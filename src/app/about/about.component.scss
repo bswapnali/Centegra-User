@@ -1,247 +1,227 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald");
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
-
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
 
 h1 {
-    font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 p {
-    font-family: 'Roboto', ;
+  font-family: "Roboto";
 }
 
-.bg-image{    
-    width: 100%;
-    background-image:  url('../../assets/Images/image75.jpg');  
-    background-repeat: no-repeat;
-    object-fit: cover;
-    height: 280px;
-    align-items: center;
-    text-align: center;
-    background-size: 100%;
+.bg-image {
+  width: 100%;
+  background-image: url("../../assets/Images/image75.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 280px;
+  align-items: center;
+  text-align: center;
+  background-size: 100%;
 }
-
+.links-title {
+  width: 100%;
+  padding: 0px 20px;
+}
+.about-warehouse-property {
+  // padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  // background-color: blueviolet;
+}
+.about-warehouse-property-left {
+  flex-basis: 45%;
+  width: 100%;
+  // background-color: green;
+  // margin-right: 10px;
+}
+.about-warehouse-property-right {
+  flex-basis: 55%;
+  width: 100%;
+  // background-color: goldenrod;
+  // margin-left: 10px;
+}
+.warehouse-property-right-img {
+  width: 25%;
+}
+// .warehouse-property-right-img img {
+//   width: 100%;
+// }
 .homepage-heading {
-    width: 100%;
-    align-items: center;
-    color: #E5E5E5;
-    padding: 40px;
-  }
-  .homepage-heading h1{
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-  }
-  .homepage-heading p{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-  }
+  width: 100%;
+  align-items: center;
+  color: #e5e5e5;
+  padding: 40px;
+}
+.homepage-heading h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+.homepage-heading p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
 
 .img-fluidabt {
-    box-sizing: border-box;
-    // position: absolute;
-     width: 100%;
-     height:120%;
-     left: -90px;
-     right:50px;
-     margin-top:98px;
-    background-size: cover;
-    // overflow-x: hidden;
-   
+  box-sizing: border-box;
+  // position: absolute;
+  width: 100%;
+  height: 120%;
+  left: -90px;
+  right: 50px;
+  margin-top: 98px;
+  background-size: cover;
+  // overflow-x: hidden;
 }
 
-.home{
-    position: relative;
-    left: -10px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 10px;
-    /* or 167% */
-    display: flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.5);
-   }
-   .about-mute{
-    width: 126x;
-    height: 18px;
-    // left: 50px;
-    // top: 70px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 10px;
-    /* or 167% */
-    display: flex;
-    align-items: center;
-   }
- .plat-links{
-    height:100%;
-    width: 100%;
-    padding: 4px;
- }
-
-.property{
-    width: 699px;
-    height: 83px;
-    left: 50px;
-    margin-top: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    /* or 111% */
-    color: #000000;
+.home {
+  position: relative;
+  left: -10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  /* or 167% */
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
 }
-.commodo{
-    width: 290px;
-    height: 22px;
-    margin-left: 80px;
-    top: 531px; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    // flex-basis: 50%;
-    // line-height: 20px;
-
-    /* or 100% */
-
-    color: #000000;
+.about-mute {
+  width: 126px;
+  height: 18px;
+  // left: 50px;
+  // top: 70px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  /* or 167% */
+  display: flex;
+  align-items: center;
 }
-.commodo-p{
-    width: 100%;
-    height: 160px;
-    margin-left: 80px;
-    top: 563px; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    /* or 167% */
-    color: #000000;
-}
- .imgrect{
-        // position: inherit;
-        box-sizing: border-box;
-        width:264px;
-        height: 221px;
-        margin-left: 75%;
-        right: 10%;
-        top: 100%;
-        bottom: -100%; 
-        background: #E5E5E5;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        transform: matrix(1, 0, 0, -1, 0, 0);
- }
-.imgrect2{
-    width: 270px;
-    height: 289px;
-    margin-left:40%;
-    top: 221px;
-    border-radius: 0px;
-}
-.imgrect3{
-    box-sizing: border-box;
-    height: 289px;
-    width: 264px;
-    margin-left: 75%;
-    border-radius: 0px; 
-    margin-top: 14px;
-    bottom: -100%;
-    background: #E5E5E5;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-.imgrect4{
-    box-sizing: border-box;
-    width: 270px;
-    height: 221px;
-    margin-left:40%;
-    border-radius:0px;    
-    margin-top: 15px;
-    bottom: -100%;
-    background: #E5E5E5;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-.Maecenas-p{
-    width: 659px;
-    height: 93px;
-     margin-left: 251px;
-    // top: 1140px;  
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    /* or 56% */
-    text-align: center;
-    color: #000000;
-
+.plat-links {
+  height: 100%;
+  width: 100%;
+  padding: 4px;
 }
 
+.property {
+  width: 100%;
+  height: 83px;
+  left: 50px;
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* or 111% */
+  color: #000000;
+}
+.commodo {
+  // width: 290px;
+  height: 22px;
+  padding: 0px 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  // flex-basis: 50%;
+  // line-height: 20px;
 
+  /* or 100% */
 
+  color: #000000;
+}
+.commodo-p {
+  width: 100%;
+  // height: 160px;
+  padding: 0px 20px;
+  top: 563px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  color: #000000;
+}
+.imgrect {
+  // position: inherit;
+  box-sizing: border-box;
+  width: 95%;
+  height: 221px;
+  background: #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.imgrect2 {
+  width: 95%;
+  height: 289px;
+  border-radius: 0px;
+}
+.imgrect3 {
+  box-sizing: border-box;
+  height: 289px;
+  width: 95%;
+  border-radius: 0px;
+  margin-top: 14px;
+  background: #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.imgrect4 {
+  box-sizing: border-box;
+  width: 95%;
+  height: 221px;
 
+  border-radius: 0px;
+  margin-top: 15px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  background: #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.Maecenas-p {
+  width: 100%;
+  height: 93px;
+  // margin-left: 251px;
+  // top: 1140px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 56% */
+  text-align: center;
+  color: #000000;
+}
+.warehouse-property-right-img {
+  display: flex;
+  width: 100%;
+  // background-color: red;
+}
+.name-designation {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.team-pics-card {
+  width: 24%;
+}
+.team-pics-card img {
+  width: 100%;
+}
 // /* If the screen size is 1200px wide or more, set the font-size to 80px */
 // @media (max-width: 786px) {
 // html,body{
@@ -287,10 +267,6 @@ p {
 //         flex-direction: column;
 //     }
 
-
-
-
-    
 //   }
 //   /* If the screen size is smaller than 1200px, set the font-size to 80px */
 //   @media (max-width: 1199.98px) {
