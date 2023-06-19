@@ -45,6 +45,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LogsignbtnComponent } from './login-sign/logsignbtn/logsignbtn.component';
+import { WarehouseCompareCardComponent } from './warehouse-compare-card/warehouse-compare-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +67,7 @@ import { LogsignbtnComponent } from './login-sign/logsignbtn/logsignbtn.componen
     AccountCreatedDialogComponent,
     RegistrationdetailsComponent,
     LogsignbtnComponent,
+    WarehouseCompareCardComponent,
     
   ],
   imports: [

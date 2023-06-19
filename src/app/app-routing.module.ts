@@ -17,32 +17,31 @@ import { SelectLocationComponent } from './network/select-location/select-locati
 import { LoginComponent } from './login-sign/login/login.component';
 import { AccountCreatedDialogComponent } from './login-sign/account-created-dialog/account-created-dialog.component';
 import { RegistrationdetailsComponent } from './registrationdetails/registrationdetails.component';
-
+import { WarehouseCompareCardComponent } from './warehouse-compare-card/warehouse-compare-card.component';
 
 const routes: Routes = [
   //  {path:'header2',component:Header2Component},
-  {path:'',component:HomeComponent},
-  {path:'home',component:HomeComponent},
-  {path:'about',component:AboutComponent},
-  {path:'leasing',component:LeasingComponent},
-  {path:'listing',component:ListingComponent},
-  {path:'network',component:NetworkComponent},
-  {path:'platform',component:PlatformComponent},
-  {path:'career',component:CareerComponent},
-  {path:'terms/conditions',component:ConditionsComponent},
-  {path:'privacy-policy',component:PrivacyPolicyComponent},
-  {path:'signup',component:SignupComponent},
-  {path:'login',component:LoginComponent},
-  {path:'navbar',component:NavbarComponent},
-  {path:'select-location',component:SelectLocationComponent},
-  {path:'account-created-dialog',component:AccountCreatedDialogComponent},
-  {path:'registrationdetails',component:RegistrationdetailsComponent},
-
-
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'leasing', component: LeasingComponent },
+  { path: 'listing', component: ListingComponent },
+  { path: 'network', component: NetworkComponent },
+  { path: 'platform', component: PlatformComponent },
+  { path: 'career', component: CareerComponent },
+  { path: 'terms/conditions', component: ConditionsComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'navbar', component: NavbarComponent },
+  { path: 'select-location', component: SelectLocationComponent },
+  { path: 'account-created-dialog', component: AccountCreatedDialogComponent },
+  { path: 'registrationdetails', component: RegistrationdetailsComponent },
+  { path: 'warehousecompare', component: WarehouseCompareCardComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
