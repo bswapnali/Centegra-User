@@ -1,4 +1,4 @@
-.button1 {
+.button-dark button {
     display: flex;
     margin-top: 40px;
     justify-content: center;
@@ -7,14 +7,17 @@
     font-weight: 500;
     font-size: 14px;
     align-items: center;
-    background-color: black;
-    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 6px;
   }
+  .button-dark{
+    display: flex;
+  }
+  
   .CloseBtn {
-    // margin-top: 40px;
-    float: left;
+   margin-top: 40px;
+    float: right;
+    // margin-left: 900px;
   }
   .CloseBtn button {
     width: 25px;
