@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
     });
    
   }
-  onSign(): void {debugger
+  onSign(): void {
 
     const dialogRef = this.dialog.open(LogsignbtnComponent, {
       // width: '1126px',
