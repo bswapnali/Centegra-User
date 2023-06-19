@@ -15,9 +15,9 @@
   }
   
   .CloseBtn {
-   margin-top: 40px;
+  //  margin-top: 40px;
     float: right;
-    // margin-left: 900px;
+  //  margin-left: 900px;
   }
   .CloseBtn button {
     width: 25px;
@@ -32,4 +32,7 @@
 .button-dark button:focus{
     background:#070707;
     color: #FFFFFF;
+}
+.mdc-card {
+  overflow: hidden; /* Hide the scrollbar */
 }

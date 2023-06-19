@@ -23,8 +23,8 @@ export class HeaderComponent implements OnInit {
 
   onLogin(): void {
     const dialogRef = this.dialog.open(LogsignbtnComponent, {
-      width: '50%',
-      height: '80%',
+      // width: '50%',
+      // height: '80%',
       data:{isLogin: true}
     });
 
@@ -36,8 +36,8 @@ export class HeaderComponent implements OnInit {
   onSign(): void {debugger
 
     const dialogRef = this.dialog.open(LogsignbtnComponent, {
-      width: '1300px',
-      height: '550px',
+      // width: '1126px',
+      // height: '572px',
       data:{IsSignup: true}
     });
 
