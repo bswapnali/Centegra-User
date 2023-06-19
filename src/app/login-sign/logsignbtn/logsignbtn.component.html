@@ -6,14 +6,13 @@
       </div>
     <mat-card-header style="margin-top: -45px"   >
       <div class="button-dark">
-        <button mat-raised-button class="button1" value="isSignup" (click)="onSubmit1()" >
+        <button mat-raised-button  [ngClass]="{'active': isSignup}"   value="isSignup" (click)="onSubmit1()" >
           Sign Up
         </button>
   
         <button 
           mat-raised-button
-          class="button1"
-          value="isLogin"
+          value="isLogin" [ngClass]="{'active': isLogin}"
           (click)="onSubmit2()"
         >
           Login
