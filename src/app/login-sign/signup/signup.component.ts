@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AccountCreatedDialogComponent } from './account-created-dialog/account-created-dialog.component';
+import { AccountCreatedDialogComponent } from '../account-created-dialog/account-created-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { SharedserviceService } from '../service/sharedservice.service';
-import { SignupService } from '../service/signup.service';
+import { SharedserviceService } from '../../service/sharedservice.service';
+import { SignupService } from '../../service/signup.service';
 import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-signup',
@@ -56,20 +56,20 @@ export class SignupComponent {
   //   {name: 'Federated States Of Micronesia', abbreviation: 'FM'},
   //   {name: 'Florida', abbreviation: 'FL'},
   // ];
-  onLogin(): void {
-    const dialogRef = this.dialog.open(LoginComponent, {
-      width: '50%',
-      height: '80%',
-    });
+  // onLogin(): void {
+  //   const dialogRef = this.dialog.open(LoginComponent, {
+  //     width: '50%',
+  //     height: '80%',
+  //   });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-    });
-  }
+  //   dialogRef.afterClosed().subscribe((result) => {
+  //     console.log('The dialog was closed');
+  //   });
+  // }
 
-  signup() {
-    this.route.navigate(['/login']);
-  }
+  // signup() {
+  //   this.route.navigate(['/login']);
+  // }
   onSubmit(): void {
     this.signupService
       .signup(

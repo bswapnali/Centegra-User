@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { LoginComponent } from '../login/login.component';
-import { SignupComponent } from '../signup/signup.component';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from '../login-sign/login/login.component';
+import { SignupComponent } from '../login-sign/signup/signup.component';
+import { LogsignbtnComponent } from '../login-sign/logsignbtn/logsignbtn.component';
+import { SharedserviceService } from '../service/sharedservice.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +12,9 @@ import { SignupComponent } from '../signup/signup.component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  constructor(public dialog: MatDialog){}
+
+  constructor(public dialog: MatDialog 
+  ,private sharedService: SharedserviceService) { }
   isExpanded = false;
 
 
@@ -17,19 +22,23 @@ export class HeaderComponent implements OnInit {
   }
 
   onLogin(): void {
-    const dialogRef = this.dialog.open(LoginComponent, {
+    const dialogRef = this.dialog.open(LogsignbtnComponent, {
       width: '50%',
       height: '80%',
+      data:{isLogin: true}
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+   
   }
-  onSign(): void {
-    const dialogRef = this.dialog.open(SignupComponent, {
+  onSign(): void {debugger
+
+    const dialogRef = this.dialog.open(LogsignbtnComponent, {
       width: '1300px',
       height: '550px',
+      data:{IsSignup: true}
     });
 
     dialogRef.afterClosed().subscribe(result => {

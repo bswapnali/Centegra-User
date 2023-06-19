@@ -9,8 +9,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { LoginService } from '../service/login.service';
-import { SharedserviceService } from '../service/sharedservice.service';
+import { LoginService } from '../../service/login.service';
+import { SharedserviceService } from '../../service/sharedservice.service';
 import { SignupComponent } from '../signup/signup.component';
 @Component({
   selector: 'app-login',
@@ -73,14 +73,14 @@ export class LoginComponent {
     );
     console.log('Thanks!');
   }
-  onSign(): void {
-    const dialogRef = this.dialog.open(SignupComponent, {
-      width: '1300px',
-      height: '550px',
-    });
+  // onSign(): void {
+  //   const dialogRef = this.dialog.open(SignupComponent, {
+  //     width: '1300px',
+  //     height: '550px',
+  //   });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-    });
-  }
+  //   dialogRef.afterClosed().subscribe((result) => {
+  //     console.log('The dialog was closed');
+  //   });
+  // }
 }

@@ -1,24 +1,5 @@
 <div class="login-container">
   <div class="login-content" id="">
-    <div class="CloseBtn">
-      <button mat-mini-fab color="transperent" matDialogClose>
-        <mat-icon class="CloseIcon">cancel</mat-icon>
-      </button>
-    </div>
-    <mat-card-header style="margin-top: -45px">
-      <button mat-raised-button class="button1" (click)="onSign()">
-        Sign Up
-      </button>
-
-      <button
-        mat-raised-button
-        class="button1"
-        (click)="login()"
-        style="background-color: black; color: #ffffff"
-      >
-        Login
-      </button>
-    </mat-card-header>
     <div class="filds">
       <mat-card-content class="content">
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">

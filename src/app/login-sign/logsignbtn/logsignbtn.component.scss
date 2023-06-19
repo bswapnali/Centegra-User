@@ -1,0 +1,32 @@
+.button1 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    background-color: black;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+  }
+  .CloseBtn {
+    // margin-top: 40px;
+    float: left;
+  }
+  .CloseBtn button {
+    width: 25px;
+    height: 25px;
+  }
+  .button1:active{
+    background:
+    #000000;
+    color: #F5F5F5;
+}
+
+ button:focus{
+    background:#070707;
+    color: #FFFFFF;
+}

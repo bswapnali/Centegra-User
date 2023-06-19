@@ -11,11 +11,11 @@ import { PlatformComponent } from './platform/platform.component';
 import { CareerComponent } from './career/career.component';
 import { ConditionsComponent } from './terms/conditions/conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { SignupComponent } from './signup/signup.component';
+import { SignupComponent } from './login-sign/signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectLocationComponent } from './network/select-location/select-location.component';
-import { LoginComponent } from './login/login.component';
-import { AccountCreatedDialogComponent } from './signup/account-created-dialog/account-created-dialog.component';
+import { LoginComponent } from './login-sign/login/login.component';
+import { AccountCreatedDialogComponent } from './login-sign/account-created-dialog/account-created-dialog.component';
 import { RegistrationdetailsComponent } from './registrationdetails/registrationdetails.component';
 
 

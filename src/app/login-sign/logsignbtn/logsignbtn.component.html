@@ -1,0 +1,35 @@
+<mat-card class="button">
+    <div class="CloseBtn">
+        <button mat-mini-fab color="transperent" matDialogClose>
+          <mat-icon class="CloseIcon">cancel</mat-icon>
+        </button>
+      </div>
+    <mat-card-header style="margin-top: -45px"   >
+      <div class="button-dark">
+        <button mat-raised-button class="button1" value="isSignup" (click)="onSubmit1()" >
+          Sign Up
+        </button>
+  
+        <button 
+          mat-raised-button
+          class="button1"
+          value="isLogin"
+          (click)="onSubmit2()"
+        >
+          Login
+        </button>
+      </div>
+      </mat-card-header>
+    <!-- <div class="buttons">
+        <button mat-raised-button class="button1"(click)="onSubmit1()">
+            Sign Up
+          </button>
+          <button mat-raised-button class="button1" (click)="onSubmit2()"style="background-color: black; color: #ffffff">
+        Login
+      </button>
+    </div> -->
+    <mat-card-content>
+        <app-signup *ngIf="isSignup"></app-signup>
+        <app-login *ngIf="isLogin"></app-login>
+    </mat-card-content>
+</mat-card>
