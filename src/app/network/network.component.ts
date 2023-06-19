@@ -61,11 +61,12 @@ SelectLocation(): void {
       const decimalPart = rating % 1;
       starRating = starRating.slice(0, -1); // Remove the last star
       if (decimalPart >= 0.25 && decimalPart <= 0.75) {
-        starRating += '½'; // Add a half-star symbol
+        starRating += '⯪'; // Add a half-star symbol
       } else if (decimalPart > 0.75) {
         starRating += '★'; // Add a full star symbol
       } else {
         starRating += '☆'; // Add an empty star symbol
+        // const solidStarSymbol = '\u2605'; // ★
       }
     }
 
