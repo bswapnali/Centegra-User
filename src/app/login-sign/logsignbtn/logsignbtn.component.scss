@@ -1,37 +1,37 @@
 .button-dark button {
-    display: flex;
-    margin-top: 40px;
-    justify-content: center;
-    margin-right: 10px;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-  }
-  .button-dark{
-    display: flex;
-  }
-  
-  .CloseBtn {
-  //  margin-top: 40px;
-    float: right;
-  //  margin-left: 900px;
-  }
-  .CloseBtn button {
-    width: 25px;
-    height: 25px;
-  }
-.active{
-    background:
-    #000000;
-    color: #F5F5F5;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  margin-right: 10px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.button-dark {
+  display: flex;
 }
 
-.button-dark button:focus{
-    background:#070707;
-    color: #FFFFFF;
+.CloseBtn {
+  //  margin-top: 40px;
+  float: right;
+  //  margin-left: 900px;
+}
+.CloseBtn button {
+  width: 25px;
+  height: 25px;
+  float: inherit;
+}
+.active {
+  background: #000000;
+  color: #f5f5f5;
+}
+
+.button-dark button:focus {
+  background: #070707;
+  color: #ffffff;
 }
 .mdc-card {
   overflow: hidden; /* Hide the scrollbar */
