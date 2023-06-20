@@ -44,7 +44,10 @@
             <mat-select [(value)]="selectedRating" placeholder="Select rating">
               <mat-option *ngFor="let rating of ratings" [value]="rating">
                 <ngb-rating [rate]="5" [readonly]="true" [max]="5"></ngb-rating>
-             <mat-radio-button>{{rating.number}}  {{ getStarRating(rating.number) }}</mat-radio-button> 
+             <mat-radio-button>{{rating.rating}}    <span class="star-rating">
+              <span class="star" *ngFor="let star of getStarArray(rating.rating)" [attr.data-rating]="star"></span>
+              <span class="starnot" *ngFor="let star of getStarArray(5-(rating.rating))" [attr.data-rating]="star"></span>
+            </span></mat-radio-button> 
               </mat-option>
             </mat-select>
           </mat-form-field>

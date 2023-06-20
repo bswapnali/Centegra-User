@@ -218,3 +218,46 @@ body {
     color: #fbc02d;
     margin-right: 5px;
   }
+  .star-rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+  }
+  
+  .star-rating .star {
+    display: inline-block;
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: transparent;
+    border: 1px solid black; /* Adjust border styles as needed */
+    clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+    background-color: lightgray; 
+  }
+  // .star-rating .starnot {
+  //   display: inline-block;
+  //   width: 20px; /* Adjust as needed */
+  //   height: 20px; /* Adjust as needed */
+  //   background-color: transparent;
+  //   border: 1px solid black; /* Adjust border styles as needed */
+  //   clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+  
+  // }
+  .star-rating .star[data-rating="1"],
+  .star-rating .star[data-rating="2"],
+  .star-rating .star[data-rating="3"],
+  .star-rating .star[data-rating="4"],
+  .star-rating .star[data-rating="5"] {
+    background-color: gold; /* Adjust filled star color as needed */
+  }
+  
+  .star-rating .star[data-rating="0.5"],
+  .star-rating .star[data-rating="1.5"],
+  .star-rating .star[data-rating="2.5"],
+  .star-rating .star[data-rating="3.5"],
+  .star-rating .star[data-rating="4.5"] {
+    background-image: linear-gradient(to right, gold 50%, transparent 50%);
+  }
+  
+  // .star-rating .star:not([data-rating="0"]):not([data-rating="1"]):not([data-rating="2"]):not([data-rating="3"]):not([data-rating="4"]):not([data-rating="5"]) {
+  //   background-color: lightgray; /* Adjust empty star color as needed */
+  // }
