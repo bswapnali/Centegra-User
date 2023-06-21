@@ -1,0 +1,30 @@
+<form [formGroup]="rangeForm">
+    <mat-form-field class="example-full-width">
+        <mat-select
+          placeholder="Select a date range"
+          [(value)]="selectedRange"
+          (selectionChange)="onRangeSelected()"
+        >
+          <mat-option value="selectdate">Select a date range</mat-option>
+          <mat-option value="last7days">Last 7 Days</mat-option>
+          <mat-option value="last30days">Last 30 Days</mat-option>
+          <mat-option value="custom">Custom Range</mat-option>
+        </mat-select>
+      </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="startPicker" placeholder="Start Date" formControlName="startDate">
+      <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="endPicker" placeholder="End Date" formControlName="endDate">
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+  
+    <div class="date-range-label">
+      Selected Range: {{ rangeForm.value.startDate | date }} - {{ rangeForm.value.endDate | date }}
+    </div>
+   
+  </form>
+  

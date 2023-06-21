@@ -46,6 +46,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LogsignbtnComponent } from './login-sign/logsignbtn/logsignbtn.component';
 import { WarehouseCompareCardComponent } from './warehouse-compare-card/warehouse-compare-card.component';
+import { DaterangeComponent } from './leasing/daterange/daterange.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,7 @@ import { WarehouseCompareCardComponent } from './warehouse-compare-card/warehous
     RegistrationdetailsComponent,
     LogsignbtnComponent,
     WarehouseCompareCardComponent,
+    DaterangeComponent,
     
   ],
   imports: [
